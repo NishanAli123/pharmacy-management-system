@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALIX / View Medicines</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="pharmacist.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="medkit-outline"></ion-icon>                        
+                        </span>
+                        <span class="title healix">HEALIX</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pharmacist.html">
+                        <span class="icon">
+                            <ion-icon name="bandage-outline"></ion-icon>
+                        </span>
+                        <span class="title">View Medicines</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="billing.html">
+                        <span class="icon">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                        </span>
+                        <span class="title">Billing</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="regularcustomer.html">
+                        <span class="icon">
+                            <ion-icon name="people-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Regular Customers</span>
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a href="#" onclick="logout()">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="main">
+            <div class="details">
+                <div class="recentOrders" >
+                    <div class="cardHeader">
+                        <h2>Medicines</h2>
+                        <div class="search">
+                            <label>
+                                <input type="text" placeholder="Search here">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tableContainer">
+                    <table>
+                        <thead class="heading">
+                            <tr>
+                                <td>Medicine ID</td>
+                                <td>Medicine Name</td>
+                                <td>Use</td>
+                                <td>Available</td>
+                                <td>Shelf Location</td>
+                                <td>Price(₹)</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <!-- This will be populated dynamically by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="pharmacist.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

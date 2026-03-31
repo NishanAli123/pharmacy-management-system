@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALIX / Order Medicines</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="ordermedicine.css">
+</head>
+
+<body id="myBody">
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="medkit-outline"></ion-icon>                        
+                        </span>
+                        <span class="title healix">HEALIX</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="addpharmacist.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Add/Remove Pharmacist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="viewmedicine.html">
+                        <span class="icon">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </span>
+                        <span class="title">View Stocks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="addmedicines.html">
+                        <span class="icon">
+                            <ion-icon name="bandage-outline"></ion-icon>
+                        </span>
+                        <span class="title">Add Medicines</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="addstock.html">
+                        <span class="icon">
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Add Stock</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ordermedicine.html">
+                        <span class="icon">
+                            <ion-icon name="sync-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Place Orders</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="notification.html">
+                        <span class="icon">
+                            <ion-icon name="mail-unread-outline"></ion-icon>
+                        </span>
+                        <span class="title">Notification</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="logout()">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+    </div>
+
+    <div class="container1">
+        <div class="container2">
+            <div class="form-container sign-in">
+                <form id="orderForm" class="ph">
+                    <h1>ENTER ORDER DETAILS</h1>
+                    <input type="number" id="o_id" name="o_id" placeholder="Order ID" required>
+                    <input type="number" id="s_id" name="s_id" placeholder="Supplier ID" required>
+
+                    <div id="medicineContainer" class="medicineContainer">
+                        <div class="medicineEntry">
+                            <input type="text" name="med_name[]" placeholder="Medicine Name" required>
+                            <input type="number" name="quantity[]" placeholder="Quantity" required>
+                            <button type="button" class="removeMedicine" id="removeMedicine">Remove</button>
+                        </div>
+                    </div>
+                    
+                    <button type="button" id="addMedicine">Add more</button>
+                    <button type="submit" id="joseph">Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+                
+
+    <!-- =========== Scripts =========  -->
+    <script src="ordermedicine.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

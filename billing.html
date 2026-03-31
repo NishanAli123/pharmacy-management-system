@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALIX / Billing</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="billing.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="medkit-outline"></ion-icon>                        
+                        </span>
+                        <span class="title healix">HEALIX</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pharmacist.html">
+                        <span class="icon">
+                            <ion-icon name="bandage-outline"></ion-icon>
+                        </span>
+                        <span class="title">View Medicines</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="billing.html">
+                        <span class="icon">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                        </span>
+                        <span class="title">Billing</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="regularcustomer.html">
+                        <span class="icon">
+                            <ion-icon name="people-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Regular Customers</span>
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a href="#" onclick="logout()">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="main">
+            <div class="details">
+                <div class="recentOrders" >
+                    <div class="cardHeader">
+                        <h2>Billing</h2>
+                    </div>
+                    <div class="container1">
+                        <form id="orderForm">
+                            <div class="input-group">
+                                <input type="text" id="saleId" placeholder="Sale ID" readonly>
+                            </div>
+                            <div id="orderRows">
+                                <!-- Order rows will be inserted here -->
+                            </div>
+                            <div class="total-price">
+                                <span>Total Price:</span>
+                                <span id="totalPrice">₹0.00</span>
+                            </div>
+                            <div class="button-group">
+                                <button type="button" id="addMore" class="btn btn-green">ADD MORE</button>
+                                <button type="submit" class="btn btn-purple">CONFIRM</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="billing.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
